@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display - Buy Display Online</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Roboto+Slab|Thasadith" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        body {
+            font-family: 'Thasadith', sans-serif;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: whitesmoke;
+        }
+        #header {
+            grid-column-start: span 0;
+            grid-column-end: span 2;
+            height: 50px;
+            background-color: #2874f0;
+            display: grid;
+            grid-template-columns: 1fr 3fr 2fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            color: white;
+            font-family: 'Roboto Slab', serif;
+            font-weight: bold;
+            font-size: .9em;
+
+        }
+        #menubar {
+            font-family: 'Roboto Slab', sans-serif;
+            grid-column: 1 / 3;
+            background-color: white!important;
+        }
+        #leftBar {
+            background-color: whitesmoke;
+            height: 550px;
+            padding-left: 10px;
+            position: grid;
+        }
+        .boxDiv {
+            background-color: white;
+            padding: 10px;
+            border-bottom: whitesmoke 1px solid;
+        }
+        #mainItem {
+            margin-top: 10px;
+            grid-column: 1/ 3;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: auto;
+            grid-column-gap: 10px;
+            background: whitesmoke;
+            z-index: 6;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+        }
+        #itemPage {
+            background-color: white!important;
+            margin-bottom: 20px;
+            padding: 10px;
+            display: grid;
+            grid-gap: 10px;
+        }
+        #menubar>ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px;
+            align-items: center;
+            justify-items: center;
+            list-style: none;
+            box-sizing:border-box;
+            box-shadow: 0 2px 2px 0 rgba(173, 171, 172, 0.3);
+            margin-bottom: 2px;
+        }
+        #menubar>ul>li:hover {
+            font-weight: bold;
+        }
+        #tags {
+            grid-column: 1 / 3;
+            grid-gap: 20px;
+            background: white !important;
+            border-bottom: grey .1px solid;
+            padding:40px;
+        }
+        #footer {
+            grid-column: 1 / 3; 
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background: #0A0024;
+            color:white;
+            padding: 50px;
+            font-size: small;
+        }
+        .inputSearchText{
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.23);
+            width: 450px;
+            height: 36px;
+            padding: 0 16px;
+            border-radius: 2px 0 0 2px;
+            border: 0 none;
+            outline: 0 none;
+            font-size: 14px;
+            
+        }
+        #sortBy {
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: 60px 72px 140px 140px 130px;
+            border-bottom: whitesmoke solid 2px;
+        }
+        .selected {
+            color:royalblue;
+            font-weight: bold;
+            /* text-decoration: underline royalblue; */
+            border-bottom: 2px solid royalblue;
+        }
+        .Products {
+            display: grid;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-gap: 20px;
+            padding: 20px;
+            border-bottom: whitesmoke solid 2px;
+        }
+        .rating {
+            background: green;
+            color: white;
+            padding: 4px;
+        }
+        #prodDesc {
+            display: grid;
+            grid-template-rows: 30px 60px;
+        }
+        #prodDesc>ul {
+           list-style: none;
+            font-size: 14px;
+        }
+
+        #prodDesc>ul li::before {
+            content: "\2022";
+            color: grey;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        .strike {
+            text-decoration: line-through; 
+        }
+        .breadCrumb {
+            font-family: 'Acme', sans-serif;
+        }
+        .smallFont {
+            font-size: small;
+        }
+        .greyColor {
+            color:grey;
+        }
+        .footerItem {
+            display: grid;
+            grid-gap: 10px;
+        }
+        .bolder {
+            font-weight: bold;
+        }
+        #brandDiv {
+            display: grid;
+            grid-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <span>
+                <img width="75" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_4ee2f9.png" alt="Flipkart" title="Flipkart" class="jnSYHL">
+            </span> 
+            <input class="inputSearchText" type="text" placeholder="Search for products, brands and more">
+            <span></span>
+            <span>Login & Signup</span>
+            <span>More </span>
+            <span>Cart</span>
+        </div>
+        <div id="menubar">
+            <ul>
+                <li>Electronics</li>
+                <li>Tvs & Appliances</li>
+                <li>Mens</li>
+                <li>Womens</li>
+                <li>Baby & Kids</li>
+            </ul>
+        </div>
+        <div id="mainItem">
+            <div id="leftBar">
+                <div id="FilterTitle" class="boxDiv">
+                    <span class="bolder">Filter</span>
+                </div>
+                <div id="categoryDiv" class="boxDiv">
+                    <span class="bolder">Category</span>
+                </div>
+                <div id="priceDiv" class="boxDiv">
+                    <span class="bolder">Price</span>
+                </div>
+                <div id="ramDiv" class="boxDiv">
+                    <span class="bolder">RAM</span>
+                </div>
+                <div id="brandDiv" class="boxDiv">
+                    <span class="bolder">Brand</span>
+                    <div><input type="checkbox" checked /> Realme</div>
+                    <div><input type="checkbox" /> HTC</div>
+                    <div><input type="checkbox" checked/> Sony</div>
+                    <div><input type="checkbox" /> Nokia</div>
+                </div>
+            </div>
+            <div id="itemPage">
+                <i class="breadCrumb">Home > Mobile & Ac.. > Mobiles</i>
+    
+                <span><span class="bolder">Display Mobiles</span> (Showing 1 - 10 Products of 10 products) <br></span>
+                <div id="sortBy"><b>Sort By</b> <span class="selected">Popularity</span><span>Price--Low To High</span>Price--High To Low</span><span>Newest First</span></div>
+                <div class="Products">
+                    <div id="imageProduct">
+                        <img height="250" src="https://rukminim1.flixcart.com/image/312/312/jmi22kw0/mobile/k/y/k/realme-c1-rmx1811-original-imaf9e7csexsdstd.jpeg?q=70" ><br />
+                        <input type="checkbox" > Add to Compare
+                    </div>
+                    <div id="prodDesc">
+                        <h3>Realme C1 (Mirror Black, 16 GB)</h3>
+                        <span><span class="rating">4.5</span> 1,58,760 Ratings & 18,111 Reviews</span>
+                        <ul>
+                                <li>2 GB RAM | 16 GB ROM | Expandable Upto 256 GB</li>
+                                <li>15.75 cm (6.2 inch) HD+ Display</li>
+                                <li>13MP + 2MP | 5MP Front Camera</li>
+                                <li>4230 Li-ion Battery</li>
+                                <li>Qualcomm Snapdragon 450 Octa Core 1.8 GHz Processor</li>
+                                <li>Notch Full Screen Display</li>
+                                <li>>Face Unlock</li>
+                                <li>Triple Slot (Dual Active 4G SIMs + Dedicated Memory)</li>
+                        </ul>
+                    </div>
+                    <div id="prodPrice">
+                        <h3>7,499 Rs</h3>
+                        <div class="strike">8,990 Rs</div>
+                        <p>Up to Rs. <b>6,500</b> on Exchange</p>
+                        <p>EMI Starts from Rs. <b>250</b>/ Month
+                    </div>
+                    </p>
+                </div>
+
+                <div class="Products">
+                        <div id="imageProduct">
+                            <img height="250" src="https://rukminim1.flixcart.com/image/312/312/jmi22kw0/mobile/x/t/v/realme-2-pro-rmx1801-original-imaf9e3vt9p32yhm.jpeg?q=70" ><br />
+                            <input type="checkbox" > Add to Compare
+                        </div>
+                        <div id="prodDesc">
+                            <h3>Realme C1 (Mirror Black, 16 GB)</h3>
+                            <span><span class="rating">4.5</span> 1,58,760 Ratings & 18,111 Reviews</span>
+                            <ul>
+                                    <li>2 GB RAM | 16 GB ROM | Expandable Upto 256 GB</li>
+                                    <li>15.75 cm (6.2 inch) HD+ Display</li>
+                                    <li>13MP + 2MP | 5MP Front Camera</li>
+                                    <li>4230 Li-ion Battery</li>
+                                    <li>Qualcomm Snapdragon 450 Octa Core 1.8 GHz Processor</li>
+                                    <li>Notch Full Screen Display</li>
+                                    <li>>Face Unlock</li>
+                                    <li>Triple Slot (Dual Active 4G SIMs + Dedicated Memory)</li>
+                            </ul>
+                        </div>
+                        <div id="prodPrice">
+                            <h3>7,499 Rs</h3>
+                            <div class="strike">8,990 Rs</div>
+                            <p>Up to Rs. <b>6,500</b> on Exchange</p>
+                            <p>EMI Starts from Rs. <b>250</b>/ Month
+                        </div>
+                        </p>
+                    </div>
+                
+                    <div class="Products">
+                            <div id="imageProduct">
+                                <img height="250" src="https://rukminim1.flixcart.com/image/312/312/jog2nbk0/mobile/e/x/b/mi-redmi-e7t-na-original-imafazxdh2bd6hep.jpeg?q=70" ><br />
+                                <input type="checkbox" > Add to Compare
+                            </div>
+                            <div id="prodDesc">
+                                <h3>Realme C1 (Mirror Black, 16 GB)</h3>
+                                <span><span class="rating">4.5</span> 1,58,760 Ratings & 18,111 Reviews</span>
+                                <ul>
+                                        <li>2 GB RAM | 16 GB ROM | Expandable Upto 256 GB</li>
+                                        <li>15.75 cm (6.2 inch) HD+ Display</li>
+                                        <li>13MP + 2MP | 5MP Front Camera</li>
+                                        <li>4230 Li-ion Battery</li>
+                                        <li>Qualcomm Snapdragon 450 Octa Core 1.8 GHz Processor</li>
+                                        <li>Notch Full Screen Display</li>
+                                        <li>>Face Unlock</li>
+                                        <li>Triple Slot (Dual Active 4G SIMs + Dedicated Memory)</li>
+                                </ul>
+                            </div>
+                            <div id="prodPrice">
+                                <h3>7,499 Rs</h3>
+                                <div class="strike">8,990 Rs</div>
+                                <p>Up to Rs. <b>6,500</b> on Exchange</p>
+                                <p>EMI Starts from Rs. <b>250</b>/ Month
+                            </div>
+                            </p>
+                        </div>
+
+                        <div class="Products">
+                                <div id="imageProduct">
+                                    <img height="250" src="https://rukminim1.flixcart.com/image/312/312/jk1grrk0/mobile/8/e/z/samsung-galaxy-on8-sm-j810gzbfins-original-imaf7h6x4vzkrhh4.jpeg?q=70" ><br />
+                                    <input type="checkbox" > Add to Compare
+                                </div>
+                                <div id="prodDesc">
+                                    <h3>Realme C1 (Mirror Black, 16 GB)</h3>
+                                    <span><span class="rating">4.5</span> 1,58,760 Ratings & 18,111 Reviews</span>
+                                    <ul>
+                                            <li>2 GB RAM | 16 GB ROM | Expandable Upto 256 GB</li>
+                                            <li>15.75 cm (6.2 inch) HD+ Display</li>
+                                            <li>13MP + 2MP | 5MP Front Camera</li>
+                                            <li>4230 Li-ion Battery</li>
+                                            <li>Qualcomm Snapdragon 450 Octa Core 1.8 GHz Processor</li>
+                                            <li>Notch Full Screen Display</li>
+                                            <li>>Face Unlock</li>
+                                            <li>Triple Slot (Dual Active 4G SIMs + Dedicated Memory)</li>
+                                    </ul>
+                                </div>
+                                <div id="prodPrice">
+                                    <h3>7,499 Rs</h3>
+                                    <div class="strike">8,990 Rs</div>
+                                    <p>Up to Rs. <b>6,500</b> on Exchange</p>
+                                    <p>EMI Starts from Rs. <b>250</b>/ Month
+                                </div>
+                                </p>
+                            </div>
+                
+            </div>
+        </div>
+        
+        <div id="tags">
+                <span>Top Stories : <b>Brand Directory</b><br></span>
+                <span class="smallFont"><span class="greyColor">MOST SEARCHED IN MOBILES & ACCESSORIES</span>: NOKIA 1280 | MICROSOFT MOBILES | INDIA POWER BANK | SAMSUNG | SAMSUNG GALAXY | 4G MOBILE | 6S PLUS PRICE IPHONE 4 | PRICE HTC WILDFIRE | GALAXY NOTE 4 PRICE | GIONEE MOBILES PRICE | MICROSOFT MOBILES | INDIA POWER BANK | SAMSUNG | SAMSUNG GALAXY | 4G MOBILE | 6S PLUS PRICE IPHONE 4 | PRICE HTC WILDFIRE | GALAXY NOTE 4 PRICE | GIONEE MOBILES PRICE | MICROSOFT MOBILES | INDIA POWER BANK | SAMSUNG | SAMSUNG GALAXY | 4G MOBILE | 6S PLUS PRICE IPHONE 4 | PRICE HTC WILDFIRE | GALAXY NOTE 4 PRICE | GIONEE MOBILES PRICE</span>
+        </div>
+        <div id="footer">
+                <span class="footerItem">
+                    <div class="greyColor bolder">ABOUT</div>
+                    <div>Contact Us</div>
+                    <div>About Us</div>
+                    <div>Careers</div> 
+                    <div>Flipkart Stories</div>
+                    <div>Press</div>
+                </span>
+                <span class="footerItem">
+                    <div class="greyColor bolder">HELP</div>
+                    <div>Payments</div>
+                    <div>Shipping</div>
+                    <div>Cancellation & Returns</div>
+                    <div>FAQ</div>
+                    <div>Report Infringement</div>
+                </span>
+                <span class="footerItem">
+                    <div class="greyColor bolder">POLICY</div>
+                    <div>Return Policy</div>
+                    <div>Terms Of Use</div>
+                    <div>Security</div>
+                    <div>Privacy</div>
+                    <div>Sitemap</div>
+                    <div>EPR Compliance</div>
+                </span>
+                <span class="footerItem">
+                    <div class="greyColor bolder">SOCIAL</div>
+                    <div>Facebook</div>
+                    <div>Twitter</div>
+                    <div>YouTube</div>
+                    <div>Google Plus</div>
+                </span>
+                <span class="footerItem">
+                    <span class="greyColor bolder">Mail Us:</span>
+                    Flipkart Internet Pvt Ltd Block B (Begonia),<br />
+                    
+                    Ground Floor, Embassy Tech Village,<br />
+                    
+                    Outer Ring Road, Devarabeesanahalli Village,<br />
+                    
+                    Varthur Hobli, Bengaluru East Taluk,<br />
+                    
+                    Bengaluru District,<br />
+                    
+                    Karnataka, India, 560103.  
+                </span>              
+        </div>
+    </div>
+</body>
+</html>
